@@ -3,14 +3,14 @@ import Eos from "eosjs";
 
 export const network = {
   blockchain: "eos",
-  host: "api.bossweden.org",
+  host: "pbft.bossweden.org",
   port: 443,
   protocol: "https",
-  chainId: "d5a3d18fbb3c084e3b1f3fa98c21014b5f3db536cc15d08f9f6479517c6a3d86"
+  chainId: "f24fb2200b830ac319211c8b9bbaa6a898a0a0aefb349c9b6f1df509e5089612"
 }
 
 export const restApi = Eos({
-  httpEndpoint: `${network.protocol}://api.bossweden.org:${network.port}`,
+  httpEndpoint: `${network.protocol}://pbft.bossweden.org:${network.port}`,
   chainId: network.chainId
 })
 
